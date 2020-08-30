@@ -33,7 +33,7 @@ function Rounds(Division $division): Team
     printf('==================================%s', PHP_EOL);
 
     do {
-        printf('%sRound #%d: %s-------------------------------%s', PHP_EOL, $round, PHP_EOL, PHP_EOL, PHP_EOL);
+        printf('%sRound #%d: %s--------------------------------%s', PHP_EOL, $round, PHP_EOL, PHP_EOL, PHP_EOL);
         $winners = match($winners);
         $round++;
     } while (count($winners) > 1);
